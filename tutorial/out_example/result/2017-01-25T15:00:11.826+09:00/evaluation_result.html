@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Evaluation Results</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body>
+<div class="container docs-content">
+<h1>Evaluation Results</h1>
+<p>2017-01-25T15:00:11.826+09:00</p>
+<p><a href="../index.html">HISTORY</a></p>
+<h2>Summary</h2>
+<table class="table table-sm table-bordered">
+<thead class="thead-inverse"><tr><th>WRITER</th><th>ROUGE</th><th>AVERAGING</th><th># OF DATASETs</th><th># OF Qs</th><th>MEAN</th><th>MAX</th><th>MEDIAN</th><th>MIN</th><th>VARIANCE</th><th>STANDARD DEVIATION</th></tr></thead>
+<tbody><tr><th rowspan="4" scope="row">Baseline</th><th rowspan="2" scope="row">ROUGE-1 F1 Score by Content Word</th><th scope="row">Micro</th><td>2</td><td>5</td><td>0.05470</td><td>0.08152</td><td>0.07025</td><td>0.00000</td><td>0.00085</td><td>0.02923</td></tr>
+<tr><th scope="row">Macro</th><td>2</td><td>5</td><td>0.05572</td><td>0.07670</td><td>0.07106</td><td>0.02492</td><td>0.00071</td><td>0.02354</td></tr>
+<tr><th rowspan="2" scope="row">ROUGE-2 F1 Score by Content Word</th><th scope="row">Micro</th><td>2</td><td>5</td><td>0.00241</td><td>0.00888</td><td>0.00000</td><td>0.00000</td><td>0.00001</td><td>0.00346</td></tr>
+<tr><th scope="row">Macro</th><td>2</td><td>5</td><td>0.00275</td><td>0.00602</td><td>0.00444</td><td>0.00000</td><td>0.00001</td><td>0.00296</td></tr>
+</tbody>
+</table>
+<h2>Particulars</h2>
+<table class="table table-sm table-bordered">
+<thead class="thead-inverse"><tr><th>DATASET</th><th>QUESTION LABEL</th><th>HAS KEYWORDS?</th><th>CHAR LIMIT</th><th>WRITER</th><th>ROUGE-1 F1 Score by Content Word</th><th>ROUGE-2 F1 Score by Content Word</th></tr></thead>
+<tbody><tr><th rowspan="3" scope="row"><a href="./A_Baseline.xml" target="_blank">A.xml</a></th><th rowspan="1" scope="row">K792W10_【１】</th><td rowspan="1">Yes</td><td rowspan="1">0 - 600</td><td>Baseline</td><td>0.07025</td><td>0.00000</td></tr>
+<tr><th rowspan="1" scope="row">M792W10_【１】</th><td rowspan="1">Yes</td><td rowspan="1">0 - 510</td><td>Baseline</td><td>0.08152</td><td>0.00316</td></tr>
+<tr><th rowspan="1" scope="row">M792W10_【２】_問(1)_(a)</th><td rowspan="1">No</td><td rowspan="1">0 - 60</td><td>Baseline</td><td>0.00000</td><td>0.00000</td></tr>
+<tr><th rowspan="2" scope="row"><a href="./B_Baseline.xml" target="_blank">B.xml</a></th><th rowspan="1" scope="row">D792W10_【１】</th><td rowspan="1">Yes</td><td rowspan="1">0 - 510</td><td>Baseline</td><td>0.07187</td><td>0.00888</td></tr>
+<tr><th rowspan="1" scope="row">F792W10_【１】</th><td rowspan="1">Yes</td><td rowspan="1">0 - 510</td><td>Baseline</td><td>0.04984</td><td>0.00000</td></tr>
+</tbody>
+</table>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

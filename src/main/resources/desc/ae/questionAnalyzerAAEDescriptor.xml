@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="questionAnalyzerAEDescriptor">
+      <import name="desc.ae.questionAnalyzerAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="gzipXmiCasConsumerDescriptor">
+      <import name="desc.cc.gzipXmiCasConsumerDescriptor"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <flowController key="questionAnalyzerFlowControllerDescriptor">
+    <import name="desc.fc.questionAnalyzerFlowControllerDescriptor"/>
+  </flowController>
+  <analysisEngineMetaData>
+    <name>questionAnalyzerAAEDescriptor</name>
+    <description>日本語質問文を解析するAggregate Analysis Engine</description>
+    <version>1.0</version>
+    <vendor>K.Sakamoto</vendor>
+    <configurationParameters searchStrategy="default_fallback">
+      <configurationParameter>
+        <name>OutputDirectory</name>
+        <description>Path to write Cas as XMI</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+        <overrides>
+          <parameter>gzipXmiCasConsumerDescriptor/OutputDirectory</parameter>
+        </overrides>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>OutputDirectory</name>
+        <value>
+          <string>out/xmi/qa</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <flowConstraints>
+      <fixedFlow>
+        <node>questionAnalyzerAEDescriptor</node>
+        <node>gzipXmiCasConsumerDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

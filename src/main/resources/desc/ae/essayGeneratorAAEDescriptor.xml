@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="essayGeneratorAEDescriptor">
+      <import name="desc.ae.essayGeneratorAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="essayWriterCCDescriptor">
+      <import name="desc.cc.essayWriterCCDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="gzipXmiCasConsumerDescriptor">
+      <import name="desc.cc.gzipXmiCasConsumerDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="essayEvaluatorCCDescriptor">
+      <import name="desc.cc.essayEvaluatorCCDescriptor"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <flowController key="essayGeneratorFlowControllerDescriptor">
+    <import name="desc.fc.essayGeneratorFlowControllerDescriptor"/>
+  </flowController>
+  <analysisEngineMetaData>
+    <name>essayGeneratorAAEDescriptor</name>
+    <description>日本語論述を作成するAggregate Analysis Engine</description>
+    <version>1.0</version>
+    <vendor>K.Sakamoto</vendor>
+    <configurationParameters searchStrategy="default_fallback">
+      <configurationParameter>
+        <name>OutputDirectory</name>
+        <description>Path to write Cas as XMI</description>
+        <type>String</type>
+        <multiValued>false</multiValued>
+        <mandatory>true</mandatory>
+        <overrides>
+          <parameter>gzipXmiCasConsumerDescriptor/OutputDirectory</parameter>
+        </overrides>
+      </configurationParameter>
+    </configurationParameters>
+    <configurationParameterSettings>
+      <nameValuePair>
+        <name>OutputDirectory</name>
+        <value>
+          <string>out/xmi/eg</string>
+        </value>
+      </nameValuePair>
+    </configurationParameterSettings>
+    <flowConstraints>
+      <fixedFlow>
+        <node>essayGeneratorAEDescriptor</node>
+        <node>essayWriterCCDescriptor</node>
+        <node>essayEvaluatorCCDescriptor</node>
+        <node>gzipXmiCasConsumerDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

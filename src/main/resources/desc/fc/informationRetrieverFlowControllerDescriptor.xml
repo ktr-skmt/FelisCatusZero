@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flowControllerDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <implementationName>uima.fc.InformationRetrieverFlowController</implementationName>
+  <processingResourceMetaData>
+    <name>Information Retriever Flow Controller</name>
+    <description>Flow controller</description>
+    <version>1.0</version>
+    <vendor>K.Sakamoto</vendor>
+    <configurationParameters/>
+    <configurationParameterSettings/>
+    <typeSystemDescription>
+      <imports>
+        <import name="desc.ts.typeSystem"/>
+      </imports>
+    </typeSystemDescription>
+    <typePriorities/>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>true</outputsNewCASes>
+    </operationalProperties>
+  </processingResourceMetaData>
+  <externalResourceDependencies/>
+  <resourceManagerConfiguration/>
+</flowControllerDescription>

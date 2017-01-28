@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<analysisEngineDescription xmlns="http://uima.apache.org/resourceSpecifier">
+  <frameworkImplementation>org.apache.uima.java</frameworkImplementation>
+  <primitive>false</primitive>
+  <delegateAnalysisEngineSpecifiers>
+    <delegateAnalysisEngine key="questionAnalyzerAAEDescriptor">
+      <import name="desc.ae.questionAnalyzerAAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="informationRetrieverAAEDescriptor">
+      <import name="desc.ae.informationRetrieverAAEDescriptor"/>
+    </delegateAnalysisEngine>
+    <delegateAnalysisEngine key="essayGeneratorAAEDescriptor">
+      <import name="desc.ae.essayGeneratorAAEDescriptor"/>
+    </delegateAnalysisEngine>
+  </delegateAnalysisEngineSpecifiers>
+  <flowController key="flowControllerDescriptor">
+    <import name="desc.fc.flowControllerDescriptor"/>
+  </flowController>
+  <analysisEngineMetaData>
+    <name>aaeDescriptor</name>
+    <description>日本語の質問文を解析し、解答に必要な日本語文書を検索し、解答文を出力するAggregate Analysis Engine</description>
+    <version>1.0</version>
+    <vendor>K.Sakamoto</vendor>
+    <configurationParameters searchStrategy="default_fallback"/>
+    <configurationParameterSettings/>
+    <flowConstraints>
+      <fixedFlow>
+        <node>questionAnalyzerAAEDescriptor</node>
+        <node>informationRetrieverAAEDescriptor</node>
+        <node>essayGeneratorAAEDescriptor</node>
+      </fixedFlow>
+    </flowConstraints>
+    <fsIndexCollection/>
+    <capabilities>
+      <capability>
+        <inputs/>
+        <outputs/>
+        <languagesSupported/>
+      </capability>
+    </capabilities>
+    <operationalProperties>
+      <modifiesCas>true</modifiesCas>
+      <multipleDeploymentAllowed>false</multipleDeploymentAllowed>
+      <outputsNewCASes>false</outputsNewCASes>
+    </operationalProperties>
+  </analysisEngineMetaData>
+  <resourceManagerConfiguration/>
+</analysisEngineDescription>

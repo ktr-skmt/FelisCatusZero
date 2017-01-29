@@ -40,5 +40,7 @@ Ughhh
 
 Essays and evaluation results!: [tutorial/out_example/result](https://github.com/ktr-skmt/FelisCatusZero/tree/master/tutorial/out_example/result)
 
+<a href="https://github.com/ktr-skmt/FelisCatusZero/blob/master/tutorial/image/pipeline.png?raw=true" target="_blank"><img src="https://github.com/ktr-skmt/FelisCatusZero/blob/master/tutorial/image/pipeline.png?raw=true" width="500px"/></a>
+
 ## More ...
 Go to [Wiki](https://github.com/ktr-skmt/FelisCatusZero/wiki/)!

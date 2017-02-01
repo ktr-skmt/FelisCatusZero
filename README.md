@@ -13,7 +13,7 @@ FelisCatus Zero answers world history essay questions in Japanese and evaluate t
 
 ## Quick Start Guide
 1. Get the QA corpus (set of question and gold standard) and the knowledge source
- - You can get both of the QA corpus and the knowledge source distributed by NTCIR [QA Lab task](http://research.nii.ac.jp/qalab/) Japanese subtask, if you participate in it and sbumit the agreement to NTCIR
+ - You can get both of the QA corpus and the knowledge source distributed by NTCIR [QA Lab task](http://research.nii.ac.jp/qalab/) Japanese subtask, if you participate in it and submit the agreement to NTCIR
  - Even if you do not have the QA corpus or the knowledge source, you can try to run the pipeline from Essay Generator as a trial. See below.
 1. Read [Install Guide](https://github.com/ktr-skmt/FelisCatusZero/wiki/Install-Guide) and install the softwares.
 1. Git clone or download this repository.

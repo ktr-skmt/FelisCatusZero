@@ -79,11 +79,11 @@ object CPERunner extends Thread {
     }
 
     if (Config.doCharacterLevelIndriIndexAsPreprocess) {
-      IndriCharactereLevelIndexer.executionStart
+      IndriCharactereLevelIndexer.run()
     }
 
     if (Config.doWordLevelIndriIndexAsPreprocess) {
-      IndriWordLevelIndexer.executionStart
+      IndriWordLevelIndexer.run()
     }
 
     if (Config.doFastTestAsPreprocess) {

@@ -1,6 +1,7 @@
 # FelisCatus Zero 
 ## Abstract
-FelisCatus Zero answers world history essay questions in Japanese and evaluate the answers.
+FelisCatus Zero answers world history essay questions in Japanese and evaluate the answers.  
+The multilingual version (currently Japanese and English) is <a href="https://github.com/ktr-skmt/FelisCatusZero-multilingual">here</a>.
  
 ## Platform
 * Unix Terminal
